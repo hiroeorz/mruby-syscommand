@@ -62,7 +62,10 @@ ls: /neko: No such file or directory
 ```ruby
 > str = exec_command("ls")
 
- => "AUTHORS\nCONTRIBUTING.md\nChangeLog\nINSTALL\nLEGAL\nMITL\nMakefile\nNEWS\nREADME.md\nRakefile\nTODO\nbenchmark\nbin\nbuild\nbuild_config.rb\nbuild_config.rb.all\ndoc\nexamples\ninclude\nminirake\nmrbgems\nmrblib\nsrc\ntasks\ntest\ntools\ntravis_config.rb\n"
+ => "AUTHORS\nCONTRIBUTING.md\nChangeLog\nINSTALL\nLEGAL\nMITL\nMakefile\n
+NEWS\nREADME.md\nRakefile\nTODO\nbenchmark\nbin\nbuild\nbuild_config.rb\n
+build_config.rb.all\ndoc\nexamples\ninclude\nminirake\nmrbgems\nmrblib\nsrc\n
+tasks\ntest\ntools\ntravis_config.rb\n"
 ```
 
 Return value is result of execute command.
