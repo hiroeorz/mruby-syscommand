@@ -1,4 +1,5 @@
-#mruby-syscommand
+#mruby-syscommand   [![Build Status](https://travis-ci.org/hiroeorz/mruby-syscommand.svg?branch=master)](https://travis-ci.org/hiroeorz/mruby-syscommand)
+
 
 System Command Library.
 
