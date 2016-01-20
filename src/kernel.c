@@ -6,6 +6,7 @@
 
 #include "mruby.h"
 #include "mruby/string.h"
+#include "mruby/variable.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
