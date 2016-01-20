@@ -6,6 +6,7 @@
 
 #include "mruby.h"
 #include "mruby/string.h"
+#include "mruby/variable.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -32,7 +33,9 @@ mrb_exec_command(mrb_state *mrb, mrb_value obj)
     buff_str = mrb_str_new_cstr(mrb, result_buff);
     mrb_str_concat(mrb, str, buff_str);
   }
-  (void) pclose(fp);
+  int rc = pclose(fp);
+  // Set the return code variable
+  mrb_gv_set(mrb, mrb_intern_cstr(mrb, "$?"), mrb_fixnum_value(WEXITSTATUS(rc)));
 
   return str;
 }
